@@ -8,8 +8,7 @@ def my_func(text):
         for i in word:
             if ord(i) < 97 or ord(i) > 122:
                 return "Введите только латинские буквы"
-        new_word = word.title()
-        result.append(new_word)
+        result.append(word.title())
     return " ".join(result)
 
 
